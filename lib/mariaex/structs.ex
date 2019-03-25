@@ -12,7 +12,7 @@ defmodule Mariaex.Result do
 
   @type t :: %__MODULE__{
     columns:  [String.t] | nil,
-    rows:     [tuple] | nil,
+    rows:     [[any]] | nil,
     last_insert_id: integer,
     num_rows: integer,
     connection_id: nil}
